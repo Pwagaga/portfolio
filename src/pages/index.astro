@@ -1,0 +1,184 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Project from '../components/Project.astro';
+import ProjectDetail from '../components/ProjectDetail.astro';
+
+const startCareer = 2019;
+const experience = new Date().getFullYear() - startCareer;
+---
+
+<Layout title="Baha Ambrosius Sibarani | Full Stack Developer">
+	<main>
+		<!--================ Start Home Banner Area =================-->
+		<section class="home_banner_area" id="home">
+			<div class="banner_inner">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-8">
+							<div class="banner_content">
+								<h3 class="text-uppercase">Hello</h3>
+								<h1 class="text-uppercase">I am Baha Ambrosius Sibarani</h1>
+								<h5 class="text-uppercase">informatics student</h5>
+								<div class="d-flex align-items-center">
+									<a class="primary_btn" href="#contact"><span>Get In Touch</span></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4">
+							<div class="profile_img">
+								<img class="img-fluid" src="../dist/img/banner/home-right.png" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</section>
+		<!--================ End Home Banner Area =================-->
+
+		<!--================ Start About Us Area =================-->
+		<section class="about_area" id="about">
+			<div class="container">
+				<div class="row justify-content-start">
+					<div class="col-lg-5">
+						<div class="about_img">
+							<img src="../dist/img/about-us.png" alt="">
+						</div>
+					</div>
+
+					<div class="offset-lg-1 col-lg-5">
+						<div class="main_title text-left">
+							<h2>let’s <br>
+								Introduce about <br>
+								myself</h2>
+							<p>
+								I am an active 7th semester student from the del institute of technology majoring in informatics. Enjoy learning something new and relaxed. Experienced in building a website and application or working on a course project. 
+							</p>
+							<a class="primary_btn" target="_blank" href="https://drive.google.com/file/d/1v36OOtjwNJFgfycSKxBiy_O_WN3WHF-G/view?usp=sharing"><span>Download CV</span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--================ End About Us Area =================-->
+
+		<!--================ Start Projects Area =================-->
+		<section class="projects_area" id="projects">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-lg-8 text-center">
+						<div class="main_title">
+							<h2>Projects</h2>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+
+					<Project 
+						title="SMA N1 Balige Website" 
+						img="../dist/img/portfolio/gamelab.png"
+						about="•	Successfully developed the SAM N1 Balige Website containing important information about the school."
+						stacks= {["PHP","HTML","CSS","MySQL"]}
+						website=""
+						github="https://github.com/delcom-itdel/pabwe-pkm-proyek-2024-k1.git"                                   
+					/>
+
+					<Project 
+						title="PRATIKMA Website" 
+						img="../dist/img/portfolio/PRATIKMA.png"
+						about="•	Successfully developed a web-based KP and MBKM Registration System to simplify the TA process for students, coordinators, and academic advisors."
+						stacks= {["PHP","HTML","CSS","JavaScript","Bootstrap","jQuery","","Slim","Medoo","MySQL"]}
+						website="https://academy.educa.id/"
+						github="https://github.com/Adtyarhz/proyek-besar-k7.git "
+						
+					/>
+
+					<Project 
+						title="SIMBA Website" 
+						img="../dist/img/portfolio/SIMBA.png"
+						about="•	Conducting tests and finding bugs and errors in a web-based student management system that contains violations, achievement points, counseling sessions, and academic guidance in real-time."
+						stacks= {["HTML","CSS","JavaScript","Bootstrap","jQuery"]}
+						website="https://lp.educastudio.com/comprov2"
+						github="https://github.com/MariaNasution/SIMBA.git "
+						
+					/>
+
+					<Project 
+						title="Educa Studio" 
+						img="../dist/img/portfolio/educastudio.png"
+						about="Educa Studio company portal, complete information about Educa Studio Brands, Channels and Programs. There are Event, Blog and Redeem Code Voucher features for the Educa Studio application."
+						stacks= {["PHP","HTML","CSS","JavaScript","Bootstrap","jQuery","Slim","Medoo","MySQL"]}
+						website="https://www.educastudio.com/"
+						github=""
+						
+					/>
+
+					<Project 
+						title="Platform Educa Studio" 
+						img="../dist/img/portfolio/platform.png"
+						about="Website CMS and API Services for the Educa Studio application. Can manage content, downloadable assets, and monitor analytics data that is created and processed by yourself without using a 3rd party."
+						stacks= {["PHP","HTML","CSS","JavaScript","Bootstrap","jQuery","Slim","Medoo","MySQL","Postman"]}
+						website="https://platform.educastudio.com/"
+						github=""
+				
+					/>
+
+				
+				</div>
+
+			</div>
+		</section>
+		<!--================ End Projects Area =================-->
+
+		<!--================ Start Contact Area =================-->
+		<section class="contact-area" id="contact">
+			<div class="container">
+				<div class="row justify-content-center align-items-center">
+					<div class="col-12 col-sm-12 col-md-8">
+						<div class="main_title">
+							<h2>CONTACT ME </h2>
+						</div>
+
+						<div class="card p-4 shadow border-0">
+							<form id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbxyvFqetMIZwdUTU2dw_vwYnVYcGrlTOEDIfBE5/exec">
+								<div class="form-group">
+									<label for="name">Email:</label>
+									<input id="form-email" class="form-control col-12" placeholder="Enter Your Email" type="email" name="email" required>
+								</div>
+	
+								<div class="form-group">
+									<label for="name">Name:</label>
+									<input id="form-name" class="form-control col-12" placeholder="Enter Your Name" type="text" name="name" required>
+								</div>
+	
+								<div class="form-group">
+									<label for="name">Message:</label>
+									<textarea id="form-message" class="form-control col-12" placeholder="Enter Your Message" rows="8" name="message" required></textarea>
+								</div>
+	
+								<button class="primary_btn float-right mt-1 btn-block" type="submit">
+									<span>Send Message</span>
+								</button>
+							</form>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--================ End Newsletter Area =================-->
+		
+		<ProjectDetail />
+	</main>
+</Layout>
+
+<script is:inline type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+
+<script type="text/javascript">
+	(function(){
+	   emailjs.init("JUMAkpW3rGZb8oU_U");
+	})();
+ </script>
